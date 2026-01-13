@@ -29,11 +29,11 @@ const Navbar = () => {
   }
 
   return (
-    <div className={`${theme ? "bg-black text-white" : "bg-white text-black"} flex relative px-8 md:px-15 py-[clamp(1rem,2vw,1.5rem)] justify-between items-center`}>
+    <div className={`${theme ? "bg-black text-white" : "bg-white text-black"} flex relative px-9 md:px-15 py-7 md:py-[clamp(1rem,2vw,1.5rem)] justify-between items-center`}>
       <h1 className='text-[clamp(1.45rem,3vw,1.75rem)] font-medium'>hrefAbdullah</h1>
 
       {/* Desktop Menu */}
-      <ul className='gap-2 hidden sm:flex sm:gap-3 lg:gap-8 text-[clamp(0.75rem,2vw,1rem)] '>
+      <ul className='gap-2 hidden sm:flex sm:gap-3 md:gap-6 lg:gap-8 text-[clamp(0.9rem,2vw,1.1rem)] '>
         <li className='cursor-pointer flex gap-2 w-full justify-center items-center'>
            <HiOutlineDesktopComputer />
           <h1>Projects</h1>
