@@ -10,7 +10,7 @@ import BlogsPage from './pages/BlogsPage'
 const App = () => {
   const theme = useSelector((state) => state.theme.value)
   return (
-    <div className={`${theme ? "bg-[#18191b] text-[#d6d7e1]" : "bg-[#d6d7e1] text-[#18191b]"} min-h-[93.5vh] md:min-h-[99.9vh] `}>
+    <div className={`${theme ? "bg-[#18191b] text-[#d6d7e1]" : "bg-[#d6d7e1] text-[#18191b]"} min-h-screen md:min-h-[99.9vh] `}>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
