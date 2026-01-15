@@ -2,10 +2,12 @@ import React from 'react'
 import pfp from '../assets/pfp.jpg'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { HiDownload } from 'react-icons/hi';
+import Typewriter from 'react-simple-typewriter';
 
 const Hero = () => {
+
     return (
-        <div className='flex w-screen h-[calc(100vh-210px)] md:h-[calc(100vh-180px)] justify-center items-center'>
+        <div className='flex w-screen h-[calc(100vh-180px)] md:h-[calc(100vh-180px)] justify-center items-center'>
             <div className='flex lg:flex-row flex-col items-center justify-center gap-5'>
                 <img className='rounded-full max-w-60 md:max-w-70 lg:max-w-100' src={pfp} alt="profilePic" />
                 <div>

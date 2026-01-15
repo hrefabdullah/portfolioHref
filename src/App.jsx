@@ -1,17 +1,25 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Hero from './components/Hero'
 import { useSelector } from 'react-redux'
+import { BrowserRouter, Routes, Route } from 'react-router'
+import Home from './pages/Home'
+import ProjectPage from './pages/ProjectPage'
+import ContactPage from './pages/ContactPage'
+import TechStackPage from './pages/TechStackPage'
+import BlogsPage from './pages/BlogsPage'
 
 
 const App = () => {
   const theme = useSelector((state) => state.theme.value)
   return (
-    <div className={`${theme ? "bg-black text-white" : "bg-white text-black"} min-h-screen`}>
-      <Navbar />
-      <Hero />
-      <Footer />
+    <div className={`${theme ? "bg-[#18191b] text-[#d6d7e1]" : "bg-[#d6d7e1] text-[#18191b]"} min-h-[93.5vh] md:min-h-[99.9vh] `}>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/projects' element={<ProjectPage />} />
+          <Route path='/contact' element={<ContactPage />} />
+          <Route path='/techstack' element={<TechStackPage />} />
+          <Route path='/blogs' element={<BlogsPage />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
