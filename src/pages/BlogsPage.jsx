@@ -10,7 +10,7 @@ const BlogsPage = () => {
 
       <main className="px-7 md:px-13 py-5 max-w-6xl mx-auto">
         {/* Page heading */}
-        <h1 className="font-bold text-[clamp(1.6rem,4vw,3rem)] mb-10">
+        <h1 className="font-semibold text-[clamp(1.6rem,4vw,2rem)] mb-10">
           Blogs & Articles
         </h1>
 
