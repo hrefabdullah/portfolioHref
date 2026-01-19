@@ -5,6 +5,7 @@ import ProjectPage from './pages/ProjectPage'
 import ContactPage from './pages/ContactPage'
 import TechStackPage from './pages/TechStackPage'
 import BlogsPage from './pages/BlogsPage'
+import Article from './pages/Article'
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/contact' element={<ContactPage />} />
           <Route path='/techstack' element={<TechStackPage />} />
           <Route path='/blogs' element={<BlogsPage />} />
+          <Route path='/article/:slug' element={<Article />} />
         </Routes>
       </BrowserRouter>
     </div>
